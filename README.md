@@ -16,3 +16,8 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+/////
+by the def of little-o, any constant c>0 will exist a n0 for all $f(n)\in c(g(n)). 
+
+use c = 1, there is a n0 for all n >= n_0, so f(n) < c(g(n)).
