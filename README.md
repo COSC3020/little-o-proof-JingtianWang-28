@@ -18,14 +18,12 @@ might help with the notation for mathematical expressions.
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 ///
-def of o, |f(n)|<= o|g(n)|means for all postive constant ε>= 0, there will have a natural number N |f(n)|<= ε|g(n)|, for all n >= a natural number N
+def of o: f(n)∈o(g(n)) <-> for all c > 0, ∃n0, for all n >= n0: f(n) < cg(n)
 
-def of O, f(n) belong O(g(n)),If there exists a positive constant c>0 and a natural number n0，|f(n)|<= c|g(n)|
+def of O: f(n)∈O(g(n)) <-> for all c > 0, ∃n0, for all n >= n0: f(n) < cg(n)-> ∃c > 0, ∃n0, for all n >= n0: f(n) < cg(n)
 
-pick a costant c that c >= 0, c = 1, when there is a N, for all n >= N
+o requires any normal number to be true, and O requires at least one normal number to be true
 
-|f(n)|<= 1|g(n)| = |g(n)|
+The conditions of o satisfy the conditions of O. If f(n) belongs to o, it must also belong to O
 
-c and n0 satisfy the definition of O，|f(n)|<= c|g(n)|，so |f(n)| ∈ c|g(n)|
-
-By using the o definition and choosing a specific ε/c, the conditions required by the O definition can be met.
+so  f(n)∈o(g(n)) -> f(n)∈O(g(n))
